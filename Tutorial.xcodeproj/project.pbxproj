@@ -13,6 +13,10 @@
 		C32AC20D1BA9C1C9006D43C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32AC20C1BA9C1C9006D43C9 /* Images.xcassets */; };
 		C32AC2101BA9C1C9006D43C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32AC20E1BA9C1C9006D43C9 /* LaunchScreen.xib */; };
 		C32AC21C1BA9C1C9006D43C9 /* TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32AC21B1BA9C1C9006D43C9 /* TutorialTests.swift */; };
+		C32AC2261BA9C3BA006D43C9 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32AC2251BA9C3BA006D43C9 /* ContentViewController.swift */; };
+		C3BD14AC1BAACA72007A247A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BD14AB1BAACA72007A247A /* MainViewController.swift */; };
+		C3BD14AE1BAAD0F7007A247A /* 1upload.mov in Resources */ = {isa = PBXBuildFile; fileRef = C3BD14AD1BAAD0F7007A247A /* 1upload.mov */; };
+		C3BD15CA1BB0419F007A247A /* 2trim.mov in Resources */ = {isa = PBXBuildFile; fileRef = C3BD15C91BB0419F007A247A /* 2trim.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		C32AC2151BA9C1C9006D43C9 /* TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32AC21A1BA9C1C9006D43C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C32AC21B1BA9C1C9006D43C9 /* TutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTests.swift; sourceTree = "<group>"; };
+		C32AC2251BA9C3BA006D43C9 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		C3BD14AB1BAACA72007A247A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C3BD14AD1BAAD0F7007A247A /* 1upload.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 1upload.mov; sourceTree = "<group>"; };
+		C3BD15C91BB0419F007A247A /* 2trim.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 2trim.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 				C32AC2051BA9C1C9006D43C9 /* AppDelegate.swift */,
 				C32AC2071BA9C1C9006D43C9 /* ViewController.swift */,
 				C32AC2091BA9C1C9006D43C9 /* Main.storyboard */,
+				C3BD14AB1BAACA72007A247A /* MainViewController.swift */,
+				C32AC2251BA9C3BA006D43C9 /* ContentViewController.swift */,
 				C32AC20C1BA9C1C9006D43C9 /* Images.xcassets */,
 				C32AC20E1BA9C1C9006D43C9 /* LaunchScreen.xib */,
 				C32AC2031BA9C1C9006D43C9 /* Supporting Files */,
@@ -90,6 +100,8 @@
 		C32AC2031BA9C1C9006D43C9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3BD14AD1BAAD0F7007A247A /* 1upload.mov */,
+				C3BD15C91BB0419F007A247A /* 2trim.mov */,
 				C32AC2041BA9C1C9006D43C9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,9 +204,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BD14AE1BAAD0F7007A247A /* 1upload.mov in Resources */,
 				C32AC20B1BA9C1C9006D43C9 /* Main.storyboard in Resources */,
 				C32AC2101BA9C1C9006D43C9 /* LaunchScreen.xib in Resources */,
 				C32AC20D1BA9C1C9006D43C9 /* Images.xcassets in Resources */,
+				C3BD15CA1BB0419F007A247A /* 2trim.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +227,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C32AC2081BA9C1C9006D43C9 /* ViewController.swift in Sources */,
+				C32AC2261BA9C3BA006D43C9 /* ContentViewController.swift in Sources */,
 				C32AC2061BA9C1C9006D43C9 /* AppDelegate.swift in Sources */,
+				C3BD14AC1BAACA72007A247A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +310,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos8.4;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,7 +348,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos8.4;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -345,6 +361,7 @@
 				INFOPLIST_FILE = Tutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -355,6 +372,7 @@
 				INFOPLIST_FILE = Tutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -411,6 +429,7 @@
 				C32AC2211BA9C1C9006D43C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C32AC2221BA9C1C9006D43C9 /* Build configuration list for PBXNativeTarget "TutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +438,7 @@
 				C32AC2241BA9C1C9006D43C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
