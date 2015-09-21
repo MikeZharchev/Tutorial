@@ -108,7 +108,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
             var viewControllers = NSArray(object: nextVC)
             self.pageViewController.setViewControllers(viewControllers as [AnyObject], direction: .Forward, animated: true, completion: nil)
             self.index = self.index + 1
-            
+            //test commits
             
         }
         
